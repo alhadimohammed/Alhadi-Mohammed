@@ -1,0 +1,143 @@
+/* start varible */
+:root {
+    --main-color: #1968ce;;
+    --sub-color: ;
+    --black-color: #080809;
+    --transbrn-color: #9c9ce1;;
+    --main-padding: 20px;
+    --main-background-colo: #cacaff;;
+    --main-margin: ;
+    --main-font-size: 18px;
+    --font-size-beg: 35px;
+    --font-size-small: 15px;
+    --beg-padding: 100px;
+    --main-border-radius: 10px;
+}
+/* end varible */
+/* start globel ruls */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--black-color);
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: var(--black-color);
+    text-transform: capitalize;
+}
+h1,h2,h3,h4,h5,h6 {
+    text-transform: capitalize;
+}
+.contener {
+    padding: 0 15px;
+    margin: 15px auto;
+}
+/* small screan */
+@media (min-width: 768px) {
+    .contener {
+        width: 750px;
+    }
+}
+/* medom screan */
+@media (min-width: 992px) {
+    .contener {
+        width: 970px;
+    }
+}
+/* larg screan */
+@media (min-width: 1200px) {
+    .contener {
+        width: 1170px;
+    }
+}
+/* end globel ruls */
+/* start header */
+header {
+
+}
+header .contener {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .contener h2 {
+    color: var(--main-color);
+    font-size: var(--font-size-beg);
+}
+@media (max-width: 767px) {
+    header .contener {
+        /* font-size: 25px; */
+        flex-direction: column;
+    }
+}
+header .contener ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+}
+header .contener ul li > a {
+    font-size: var(--main-font-size);
+    padding: var(--main-padding);
+}
+header .contener ul li:hover > a {
+    background-color: var(--main-background-colo);
+    color: white;
+}
+header .contener ul li:hover > a:active {
+    color: var(--main-color);
+}
+@media (max-width: 767px) {
+    header .contener ul li > a  {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+/* end header */
+/* start about me */
+.about-me {
+    background-image: url(../image/alhadi.jpg);
+    background-size: cover;
+    background-position: 30%;
+    height: 90vb;
+}
+.about-me .contener {
+    color: white;
+    padding-top: 20px;
+}
+.about-me .contener .image {
+    flex-basis: 50%;
+    border-radius: var(--main-border-radius);
+}
+.about-me .contener .image img {
+    border-radius: var(--main-border-radius);
+    width: 100%;
+    height: 100%;
+}
+.about-me .contener .name {
+    flex-basis: 50%;
+    padding-left: 15px;
+    line-height: 1.5;
+    font-size: var(--main-font-size);
+}
+.about-me .contener .name span {
+    font-weight: bold;
+    font-size: calc(var(--main-font-size) + 2px);
+
+}
+/* end about me */
